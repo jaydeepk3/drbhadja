@@ -1,0 +1,191 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Dr.Bhadja's Homeopathy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-label>Expert Doctors</ion-label>
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Dr. Dharmesh Bhadja</ion-card-title>
+            <ion-card-subtitle>BHMS MD</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>He is the founder of Dr Bhadja's Homeopathy Clinic, did this BHMS from AJSH Medical college, Mehsana...
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Dr. Reshma Bhadja</ion-card-title>
+            <ion-card-subtitle>BHMS MD</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>She is the founder of Dr Reshma's Homeopathy Clinic, did this BHMS from AJSH Medical college, Mehsana...
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+  <div>
+    <ion-label>Before-After</ion-label>
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Nephrotic Syndrome</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Palmar</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div>
+    <ion-label>
+      Diseases of Adults
+    </ion-label>
+    <ion-slides [options]="diseasesSlideOpts">
+        <ion-slide>
+          <ion-card>
+            <ion-card-title>
+              Hypothyroidism
+            </ion-card-title>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <ion-card-title>
+              Arthritis
+            </ion-card-title>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <ion-card-title>
+              Infertility
+            </ion-card-title>
+          </ion-card>
+        </ion-slide>
+
+    </ion-slides>
+
+  </div>
+  <div>
+      <ion-label>
+        Diseases of Kids
+      </ion-label>
+      <ion-slides [options]="diseasesSlideOpts">    
+          <ion-slide>
+            <ion-card>
+              <ion-card-title>
+                Arthritis
+              </ion-card-title>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <ion-card-title>
+                Pneumonia
+              </ion-card-title>
+            </ion-card>
+          </ion-slide>
+      </ion-slides>
+    </div>
+    <div>
+        <ion-label>
+         Rating
+        </ion-label>
+        <ion-slides [options]="diseasesSlideOpts">    
+            <ion-slide>
+              <ion-card>
+                <ion-card-header>
+                    <ion-card-title>
+                        Kaushal joshi
+                      </ion-card-title>
+                </ion-card-header>   
+                <ion-card-content>
+                    <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
+                    </p>
+                  </ion-card-content>
+              </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                  <ion-card-header>
+                      <ion-card-title>
+                          Ravi Parmar
+                        </ion-card-title>
+                  </ion-card-header>   
+                  <ion-card-content>
+                      <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
+                      </p>
+                    </ion-card-content>
+                </ion-card>
+              </ion-slide>
+        </ion-slides>
+      </div>
+      <div>
+          <ion-label>Case Studies</ion-label>
+          <ion-slides [options]="slideOpts">
+            <ion-slide>
+              <ion-card class="welcome-card">
+                <ion-img src="/assets/shapes.svg"></ion-img>
+                <ion-card-content>
+                    <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
+                    </p>
+                  </ion-card-content>
+              </ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="welcome-card">
+                <ion-img src="/assets/shapes.svg"></ion-img>
+                <ion-card-content>
+                    <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
+                    </p>
+                  </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>
+        </div>
+  <!-- <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://ionicframework.com/docs/">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Ionic Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Scaffold Out Your App</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/layout/structure">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Change Your App Layout</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/theming/basics">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>Theme Your App</ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-content>
