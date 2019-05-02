@@ -17,7 +17,7 @@
             <ion-grid no-padding class="header-block">
               <ion-row class="ion-align-items-center">
                 <ion-col no-padding size="auto">
-                  <ion-img class="person-img" src="../assets/images/person1.png"></ion-img>
+                  <ion-img class="person-img" src="../../assets/images/person1.png"></ion-img>
                 </ion-col>
                 <ion-col no-padding>
                   <h3>Dr. Dharmesh Bhadja</h3>
@@ -38,7 +38,7 @@
             <ion-grid no-padding class="header-block">
               <ion-row class="ion-align-items-center">
                 <ion-col no-padding size="auto">
-                  <ion-img class="person-img" src="../assets/images/person2.png"></ion-img>
+                  <ion-img class="person-img" src="../../../assets/images/person2.png"></ion-img>
                 </ion-col>
                 <ion-col no-padding>
                   <h3>Dr. Reshma Bhadja</h3>
@@ -56,48 +56,43 @@
       </ion-slides>
     </div>
   </div>
-  <div>
+  <div class="before-after-section">
     <h2>Before-After</h2>
     <ion-slides [options]="slideOpts">
       <ion-slide>
-        <ion-card class="welcome-card">
-          <ion-img src="../assets/images/person1.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Nephrotic Syndrome</ion-card-title>
-          </ion-card-header>
+        <ion-card class="common-card no-padding">
+          <ion-img src="../../../assets/images/after-before1.jpg"></ion-img>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card class="welcome-card">
-          <ion-img src="../assets/images/person1.jpg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Palmar</ion-card-title>
-          </ion-card-header>
+        <ion-card class="common-card no-padding">
+          <ion-img src="../assets/images/after-before1.jpg"></ion-img>
         </ion-card>
       </ion-slide>
     </ion-slides>
   </div>
-  <div>
-    <h2>
-      Diseases of Adults
-    </h2>
+  <div class="diseases-adult-section">
+    <div class="title-btn ion-justify-content-between ion-align-items-center">
+      <h2>Diseases of Adults</h2>
+      <button class="text-btn">More ></button>
+    </div>
     <ion-slides [options]="diseasesSlideOpts">
       <ion-slide>
-        <ion-card>
+        <ion-card class="common-card no-padding">
           <ion-card-title>
             Hypothyroidism
           </ion-card-title>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card>
+        <ion-card class="common-card no-padding">
           <ion-card-title>
             Arthritis
           </ion-card-title>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card>
+        <ion-card class="common-card no-padding">
           <ion-card-title>
             Infertility
           </ion-card-title>
@@ -108,9 +103,7 @@
 
   </div>
   <div>
-    <h2>
-      Diseases of Kids
-    </h2>
+    <h2>Diseases of Kids</h2>
     <ion-slides [options]="diseasesSlideOpts">
       <ion-slide>
         <ion-card>
@@ -133,8 +126,8 @@
       Rating
     </h2>
     <div class="ion-text-right">
-        <button class="text-btn" (click)="ratingMore()">More</button>
-      </div>
+      <button class="text-btn" (click)="ratingMore()">More</button>
+    </div>
     <ion-slides [options]="diseasesSlideOpts">
       <ion-slide>
         <ion-card>
@@ -187,7 +180,7 @@
       </ion-slide>
     </ion-slides>
   </div>
-<ion-list lines="none">
+  <ion-list lines="none">
     <ion-list-header>
       <h2>Resources</h2>
     </ion-list-header>
@@ -195,14 +188,14 @@
       <ion-img src="/assets/shapes.svg"></ion-img>
       <p>Dengue epidemic: What can we offer?</p>
     </ion-item>
-    <ion-item >
+    <ion-item>
       <ion-img src="/assets/shapes.svg"></ion-img>
-     <p>A case of acute paraphimosis with balanitis</p>
+      <p>A case of acute paraphimosis with balanitis</p>
     </ion-item>
-    <ion-item >
-      <ion-img src="/assets/shapes.svg"></ion-img>  
+    <ion-item>
+      <ion-img src="/assets/shapes.svg"></ion-img>
       <p>Is cronic IBS problem is under cycotic miasm?</p>
     </ion-item>
 
-  </ion-list> 
+  </ion-list>
 </ion-content>
