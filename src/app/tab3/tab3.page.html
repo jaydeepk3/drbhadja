@@ -1,9 +1,61 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Book An Appoitment
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-item>
+    <ion-label floating>Appointment for</ion-label>
+    <ion-input  type="text">Mrs.Shusma Kataria</ion-input>
+</ion-item>
+
+<ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Select Doctor</ion-label>
+      </ion-list-header>
+      <ion-item>
+          <ion-img  class="person-img" src="../assets/images/person1.png"></ion-img>
+          <h2>Dr.Dharmesh bhadja</h2>
+          <h3>BHMS MD</h3>
+          <ion-radio slot="start" value="dharmesh" checked></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-img  class="person-img" src="../assets/images/person1.png"></ion-img>
+          <h2>Dr.Reshma bhadja</h2>
+          <h3>BHMS MD Paediatric</h3>
+          <ion-radio slot="start" value="reshma"></ion-radio>
+        </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+<ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime display-format="YYYY-MM-DD"></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-label>Time</ion-label>
+  <ion-select>
+      <ion-select-option value="morning">Morning (10:30 to 1:30)</ion-select-option>
+    <ion-select-option value="evening">Evening (5:00 to 7:00)</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label floating >Select Reason</ion-label>
+  <ion-select>
+      <ion-select-option value="followup">Follow up</ion-select-option>
+      <ion-select-option value="firstvisit">First Visit/New Case</ion-select-option>
+      <ion-select-option value="labreport">Lab Report</ion-select-option>
+      <ion-select-option value="other">Other</ion-select-option>
+    </ion-select>
+<ion-input type='textarea'></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>kjdbwfe</ion-label>
+  <ion-button>-></ion-button>
+  <ion-input type="text" placeholder="Enter generated code"></ion-input>
+</ion-item>
+</ion-content>

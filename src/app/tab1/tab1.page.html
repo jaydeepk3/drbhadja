@@ -7,40 +7,56 @@
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-label>Expert Doctors</ion-label>
-    <ion-slides [options]="slideOpts">
-      <ion-slide>
-        <ion-card class="welcome-card">
-          <ion-img src="/assets/shapes.svg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Dr. Dharmesh Bhadja</ion-card-title>
-            <ion-card-subtitle>BHMS MD</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>He is the founder of Dr Bhadja's Homeopathy Clinic, did this BHMS from AJSH Medical college, Mehsana...
+  <div class="page-section">
+    <div class="expert-drs-section">
+      <h2>Expert Doctors</h2>
+      <ion-slides [options]="slideOpts">
+        <ion-slide>
+          <ion-card class="common-card">
+            <ion-grid no-padding class="header-block">
+              <ion-row class="ion-align-items-center">
+                <ion-col no-padding size="auto">
+                  <ion-img class="person-img" src="../assets/images/person1.png"></ion-img>
+                </ion-col>
+                <ion-col no-padding>
+                  <h3>Dr. Dharmesh Bhadja</h3>
+                  <p class="sub-text">BHMS MD</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <p class="desc">He is the founder of Dr Bhadja's Homeopathy Clinic, did this BHMS from AJSH Medical college,
+              Mehsana...
             </p>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card class="welcome-card">
-          <ion-img src="/assets/shapes.svg"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Dr. Reshma Bhadja</ion-card-title>
-            <ion-card-subtitle>BHMS MD</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
+            <div class="ion-text-right">
+              <button class="text-btn">Know More</button>
+            </div>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card class="common-card">
+            <ion-grid no-padding class="header-block">
+              <ion-row class="ion-align-items-center">
+                <ion-col no-padding size="auto">
+                  <ion-img class="person-img" src="../assets/images/person2.png"></ion-img>
+                </ion-col>
+                <ion-col no-padding>
+                  <h3>Dr. Reshma Bhadja</h3>
+                  <p class="sub-text">BHMS MD</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
             <p>She is the founder of Dr Reshma's Homeopathy Clinic, did this BHMS from AJSH Medical college, Mehsana...
             </p>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-
-    </ion-slides>
+            <div class="ion-text-right">
+              <button class="text-btn">Know More</button>
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </div>
   </div>
   <div>
-    <ion-label>Before-After</ion-label>
+    <h2>Before-After</h2>
     <ion-slides [options]="slideOpts">
       <ion-slide>
         <ion-card class="welcome-card">
@@ -61,131 +77,128 @@
     </ion-slides>
   </div>
   <div>
-    <ion-label>
+    <h2>
       Diseases of Adults
-    </ion-label>
+    </h2>
     <ion-slides [options]="diseasesSlideOpts">
-        <ion-slide>
-          <ion-card>
-            <ion-card-title>
-              Hypothyroidism
-            </ion-card-title>
-          </ion-card>
-        </ion-slide>
-        <ion-slide>
-          <ion-card>
-            <ion-card-title>
-              Arthritis
-            </ion-card-title>
-          </ion-card>
-        </ion-slide>
-        <ion-slide>
-          <ion-card>
-            <ion-card-title>
-              Infertility
-            </ion-card-title>
-          </ion-card>
-        </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>
+            Hypothyroidism
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>
+            Arthritis
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>
+            Infertility
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
 
     </ion-slides>
 
   </div>
   <div>
-      <ion-label>
-        Diseases of Kids
-      </ion-label>
-      <ion-slides [options]="diseasesSlideOpts">    
-          <ion-slide>
-            <ion-card>
-              <ion-card-title>
-                Arthritis
-              </ion-card-title>
-            </ion-card>
-          </ion-slide>
-          <ion-slide>
-            <ion-card>
-              <ion-card-title>
-                Pneumonia
-              </ion-card-title>
-            </ion-card>
-          </ion-slide>
-      </ion-slides>
-    </div>
-    <div>
-        <ion-label>
-         Rating
-        </ion-label>
-        <ion-slides [options]="diseasesSlideOpts">    
-            <ion-slide>
-              <ion-card>
-                <ion-card-header>
-                    <ion-card-title>
-                        Kaushal joshi
-                      </ion-card-title>
-                </ion-card-header>   
-                <ion-card-content>
-                    <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
-                    </p>
-                  </ion-card-content>
-              </ion-card>
-            </ion-slide>
-            <ion-slide>
-                <ion-card>
-                  <ion-card-header>
-                      <ion-card-title>
-                          Ravi Parmar
-                        </ion-card-title>
-                  </ion-card-header>   
-                  <ion-card-content>
-                      <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
-                      </p>
-                    </ion-card-content>
-                </ion-card>
-              </ion-slide>
-        </ion-slides>
-      </div>
-      <div>
-          <ion-label>Case Studies</ion-label>
-          <ion-slides [options]="slideOpts">
-            <ion-slide>
-              <ion-card class="welcome-card">
-                <ion-img src="/assets/shapes.svg"></ion-img>
-                <ion-card-content>
-                    <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
-                    </p>
-                  </ion-card-content>
-              </ion-card>
-            </ion-slide>
-            <ion-slide>
-              <ion-card class="welcome-card">
-                <ion-img src="/assets/shapes.svg"></ion-img>
-                <ion-card-content>
-                    <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
-                    </p>
-                  </ion-card-content>
-              </ion-card>
-            </ion-slide>
-          </ion-slides>
-        </div>
-  <!-- <ion-list lines="none">
+    <h2>
+      Diseases of Kids
+    </h2>
+    <ion-slides [options]="diseasesSlideOpts">
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>
+            Arthritis
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>
+            Pneumonia
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div>
+    <h2>
+      Rating
+    </h2>
+    <ion-slides [options]="diseasesSlideOpts">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Kaushal joshi
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Ravi Parmar
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div>
+    <h2>Case Studies</h2>
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-content>
+            <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-content>
+            <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+<ion-list lines="none">
     <ion-list-header>
-      <ion-label>Resources</ion-label>
+      <h2>Resources</h2>
     </ion-list-header>
-    <ion-item href="https://ionicframework.com/docs/">
-      <ion-icon slot="start" color="medium" name="book"></ion-icon>
-      <ion-label>Ionic Documentation</ion-label>
+    <ion-item>
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <p>Dengue epidemic: What can we offer?</p>
     </ion-item>
-    <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-      <ion-icon slot="start" color="medium" name="build"></ion-icon>
-      <ion-label>Scaffold Out Your App</ion-label>
+    <ion-item >
+      <ion-img src="/assets/shapes.svg"></ion-img>
+     <p>A case of acute paraphimosis with balanitis</p>
     </ion-item>
-    <ion-item href="https://ionicframework.com/docs/layout/structure">
-      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-      <ion-label>Change Your App Layout</ion-label>
+    <ion-item >
+      <ion-img src="/assets/shapes.svg"></ion-img>  
+      <p>Is cronic IBS problem is under cycotic miasm?</p>
     </ion-item>
-    <ion-item href="https://ionicframework.com/docs/theming/basics">
-      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-      <ion-label>Theme Your App</ion-label>
-    </ion-item>
-  </ion-list> -->
+
+  </ion-list> 
 </ion-content>
