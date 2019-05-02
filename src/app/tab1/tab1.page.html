@@ -3,6 +3,7 @@
     <ion-title>
       Dr.Bhadja's Homeopathy
     </ion-title>
+    <button (click)="toContact()">Contact us</button>
   </ion-toolbar>
 </ion-header>
 
@@ -131,6 +132,9 @@
     <h2>
       Rating
     </h2>
+    <div class="ion-text-right">
+        <button class="text-btn" (click)="ratingMore()">More</button>
+      </div>
     <ion-slides [options]="diseasesSlideOpts">
       <ion-slide>
         <ion-card>

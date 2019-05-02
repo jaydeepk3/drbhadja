@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -17,5 +18,14 @@ export class Tab1Page {
     initialSlide: 0,
     speed: 500,
     slidesPerView: 3,
+  }
+  constructor(private router: Router){
+    
+  }
+  toContact(){
+    this.router.navigate(['contactus']);
+  }
+  ratingMore(){
+    this.router.navigate(['rate']);
   }
 }
