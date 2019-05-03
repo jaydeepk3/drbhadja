@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { WriteReviewComponent } from '../write-review/write-review.component';
 
 @Component({
   selector: 'app-rate',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rate.page.scss'],
 })
 export class RatePage implements OnInit {
-
-  constructor() { }
+  @Input() rating: number;
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {
+  }
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: WriteReviewComponent,
+    });
+    return await modal.present();
   }
 
 }
