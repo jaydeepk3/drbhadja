@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RatePage } from './rate.page';
+import { IonicRatingModule } from 'ionic4-rating';
+import { WriteReviewComponent } from '../write-review/write-review.component';
 
 const routes: Routes = [
   {
@@ -19,8 +21,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    IonicRatingModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RatePage]
+  declarations: [RatePage, WriteReviewComponent],
+  entryComponents:[WriteReviewComponent]
 })
 export class RatePageModule {}

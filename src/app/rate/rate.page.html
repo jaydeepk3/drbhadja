@@ -5,22 +5,26 @@
 </ion-header>
 
 <ion-content>
-<button>
+<button (click)="presentModal()">
   Write a review
 </button>
 <ion-list>
 <ion-item>
   <ion-label>
-      Kaushal Joshi
+      Kaushal Joshi   
   </ion-label>
+  <rating  readonly="true"  size="default" (rateChange)="onRateChange($event)">
+  </rating>
   <p>
       Dr. Dharmesh Bhadja has a great knowledge, well versed experience and profound confidence. His diagnosis is absolute and flawless in both acute and chronic disease condition. His understanding of medicine is except.. Read More
   </p>
 </ion-item>
 <ion-item>
     <ion-label>
-        Dr.Rajendra Patel
+        Dr.Rajendra Patel   
     </ion-label>
+    <rating  readonly="true"  size="default" (rateChange)="onRateChange($event)">
+    </rating>
     <p>
         My mother was suffering from stomach,gas and other related problems.after consult with Dr.Bhadja sir .my mother is filling very well.it is good experience for me and my mother.
     </p>
@@ -29,9 +33,12 @@
       <ion-label>
           Dr.Rajendra Patel
       </ion-label>
+      <rating  readonly="true"  size="default" (rateChange)="onRateChange($event)">
+      </rating>
       <p>
           It was a healthy experience each and everytime to get treatment from Dr Bhadja's Homeopathic clinic. It's not just visit but a journey.
       </p>
     </ion-item>
+   
 </ion-list>
 </ion-content>
