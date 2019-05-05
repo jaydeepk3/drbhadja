@@ -96,100 +96,113 @@
     </ion-slides>
 
   </div>
-  <div>
-    <h2>Diseases of Kids</h2>
-    <ion-slides [options]="diseasesSlideOpts">
-      <ion-slide>
-        <ion-card>
-          <ion-card-title>
-            Arthritis
-          </ion-card-title>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <ion-card-title>
-            Pneumonia
-          </ion-card-title>
-        </ion-card>
-      </ion-slide>
-    </ion-slides>
-  </div>
-  <div>
-    <h2>
-      Rating
-    </h2>
-    <div class="ion-text-right">
-      <button class="text-btn" (click)="ratingMore()">More</button>
+  <div class="diseases-adult-section">
+    <div class="title-btn ion-justify-content-between ion-align-items-center">
+      <h2>Diseases of Kids</h2>
     </div>
     <ion-slides [options]="diseasesSlideOpts">
       <ion-slide>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>
-              Kaushal joshi
-            </ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
-            </p>
-          </ion-card-content>
+        <ion-card class="common-card">
+          <h1>Arthritis</h1>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>
-              Ravi Parmar
-            </ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence.. Read More
-            </p>
-          </ion-card-content>
+        <ion-card class="common-card">
+          <h1>Pneumonia</h1>
         </ion-card>
       </ion-slide>
     </ion-slides>
   </div>
-  <div>
-    <h2>Case Studies</h2>
+  <div class="rating-section">
+    <div class="title-btn ion-justify-content-between ion-align-items-center">
+      <h2>Rating</h2>
+      <button class="text-btn" (click)="ratingMore()">More ></button>
+    </div>
+    <ion-slides [options]="diseasesSlideOpts">
+      <ion-slide>
+        <ion-card class="common-card">
+          <h2>Kaushal joshi</h2>
+          <p class="no-margin">Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence..
+            Read More
+          </p>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="common-card">
+          <h2>Ravi Parmar</h2>
+          <p class="no-margin">Dr Darmesh Bhadja has a great knowledge, well versed experience and profound confidence..
+            Read More
+          </p>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="case-studies-section">
+    <div class="title-btn ion-justify-content-between ion-align-items-center">
+      <h2>Case Studies</h2>
+      <button class="text-btn">More ></button>
+    </div>
     <ion-slides [options]="slideOpts">
       <ion-slide>
-        <ion-card class="welcome-card">
+        <ion-card>
           <ion-img src="/assets/shapes.svg"></ion-img>
-          <ion-card-content>
-            <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
-            </p>
-          </ion-card-content>
+          <h4>Swelling of the fingers and occasionally swelling of the lips and eyelid.. <button class="text-btn">Read
+              More</button>
+          </h4>
         </ion-card>
       </ion-slide>
       <ion-slide>
-        <ion-card class="welcome-card">
+        <ion-card>
           <ion-img src="/assets/shapes.svg"></ion-img>
-          <ion-card-content>
-            <p>Swelling of the fingers and occasionally swelling of the lips and eyelid.. Read More
-            </p>
-          </ion-card-content>
+          <h4>Swelling of the fingers and occasionally swelling of the lips and eyelid.. <button class="text-btn">Read
+              More</button>
+          </h4>
         </ion-card>
       </ion-slide>
     </ion-slides>
   </div>
-  <ion-list lines="none">
-    <ion-list-header>
-      <h2>Resources</h2>
-    </ion-list-header>
-    <ion-item>
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <p>Dengue epidemic: What can we offer?</p>
-    </ion-item>
-    <ion-item>
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <p>A case of acute paraphimosis with balanitis</p>
-    </ion-item>
-    <ion-item>
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <p>Is cronic IBS problem is under cycotic miasm?</p>
-    </ion-item>
-
-  </ion-list>
+  <div class="articles-section">
+    <div class="title-btn ion-justify-content-between ion-align-items-center">
+      <h2>Articles</h2>
+      <button class="text-btn" (click)="ratingMore()">More ></button>
+    </div>
+    <ion-list lines="none">
+      <ion-item>
+        <div class="article-item">
+          <ion-img src="/assets/images/article1.png"></ion-img>
+          <div class="article-desc">
+            <h4>Dengue epidemic: What can we offer?</h4>
+            <div class="article-footer ion-justify-content-between ion-align-items-center">
+              <p class="date">27th Jan’18</p>
+              <button class="text-btn">Know More</button>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="article-item">
+          <ion-img src="/assets/images/article1.png"></ion-img>
+          <div class="article-desc">
+            <h4>A case of acute paraphimosis with balanitis</h4>
+            <div class="article-footer ion-justify-content-between ion-align-items-center">
+              <p class="date">27th Jan’18</p>
+              <button class="text-btn">Know More</button>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="article-item">
+          <ion-img src="/assets/images/article1.png"></ion-img>
+          <div class="article-desc">
+            <h4>Is cronic IBS problem is under cycotic miasm?</h4>
+            <div class="article-footer ion-justify-content-between ion-align-items-center">
+              <p class="date">27th Jan’18</p>
+              <button class="text-btn">Know More</button>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

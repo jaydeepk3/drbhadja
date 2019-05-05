@@ -1,1 +1,35 @@
+.before-after-section h2,
+.expert-drs-section h2              { margin: 0px 0px 0px 15px;}
+.rating-section .common-card,
+.diseases-adult-section .common-card,
+.before-after-section .common-card,
+.expert-drs-section .common-card    { margin: 12px 0px 12px 15px; width: 100%;}
+.expert-drs-section .header-block   { margin-bottom: 10px;}
+.expert-drs-section .person-img     { margin-right: 8px; width: 50px; border-radius: 50%; }
+.expert-drs-section h3              { margin-bottom: 3px; }
+.expert-drs-section .sub-text       { margin: 0px; color: #757575; text-transform: uppercase; }
+.expert-drs-section .desc           { margin-bottom: 18px;}
+
+// diseases-adult-section
+.diseases-adult-section ion-slide   { width: unset !important; }
+.diseases-adult-section             { padding: 20px 0px; }
+.diseases-adult-section h1          { margin: 2px 0px; font-weight: 400; color: #17cf93; text-align: center; }
+.diseases-adult-section ion-slide:nth-child(2n) h1 { color: #ffb837; }
+.diseases-adult-section ion-slide:nth-child(3n) h1 { color: #b142ff; }
+
+// rating-section
+.rating-section ion-slide           { width: 70% !important; }
+.rating-section                 { padding: 10px 0px 20px; }
+
+// case-studies
+.case-studies-section           { padding: 20px 0px; }
+.case-studies-section h4            { margin: 0px; padding: 15px; text-align: left; }
+
+.articles-section               { padding: 10px 0px 20px; }
+.articles-section .title-btn    { margin-bottom: 12px; }
+.articles-section .article-item { margin: 5px 5px 10px; width: 100%; display: flex; border-radius: 5px; box-shadow: 1px 3px 15px rgba(0,0,0,0.11); -webkit-box-shadow: 1px 3px 15px rgba(0,0,0,0.11);}
+.articles-section ion-img       { width: 90px; flex-shrink: 0; -webkit-flex-shrink: 0; }
+.articles-section .article-desc { padding: 10px; display: flex; flex-direction: column; -webkit-flex-direction: column; justify-content: space-between; -webkit-justify-content: space-between;}
+.articles-section .article-footer { display: flex; }
+.articles-section .date         { margin: 0px;}
 

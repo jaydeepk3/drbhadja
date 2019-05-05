@@ -6,9 +6,13 @@ html body                       { font-family: 'Roboto', sans-serif; color: #212
 h1                              { margin: 0px 0px 12px; font-size: 18px; line-height: 26px; color: #212121; font-weight: 700; }
 h2                              { margin: 0px 0px 12px; font-size: 16px; line-height: 19px; color: #212121; font-weight: 700; }
 h3                              { margin: 0px 0px 15px; font-size: 16px; line-height: 19px; color: #212121; font-weight: 600; }
+h4                              { margin: 0px 0px 15px; font-size: 16px; line-height: 19px; font-weight: 400; }
 p                               { margin: 0px 0px 15px; font-size: 14px; line-height: 19px; }
+// p.big-text                      { font-size: 14px; line-height: 19px; }
 .sub-text                       { font-size: 12.5px; line-height: 15px; }
 .page-section                   { padding: 25px 0px;}
+.no-margin                      { margin: 0px; }
+
 .text-btn                       { margin: 0px; padding: 0px; height: auto; background: transparent !important; font-size: 16px; line-height: 19px; font-weight: 500; color: $blue-color !important; border-radius: 0px; border: none !important; }
 .title-btn                      { padding: 0px 15px; display: flex; }
 .title-btn h2                   { margin: 0px; }
@@ -16,20 +20,7 @@ p                               { margin: 0px 0px 15px; font-size: 14px; line-he
 ion-card.common-card                { margin: 0px; padding: 12px; border-radius: 5px; box-shadow: 1px 3px 15px rgba(0,0,0,0.11); -webkit-box-shadow: 1px 3px 15px rgba(0,0,0,0.11); text-align: left; }
 ion-card.common-card.no-padding     { padding: 0px; }
 
-.before-after-section h2,
-.expert-drs-section h2              { margin: 0px 0px 0px 15px;}
-.diseases-adult-section .common-card,
-.before-after-section .common-card,
-.expert-drs-section .common-card    { margin: 12px 0px 12px 15px; width: 100%;}
-.expert-drs-section .header-block   { margin-bottom: 10px;}
-.expert-drs-section .person-img     { margin-right: 8px; width: 50px; border-radius: 50%; }
-.expert-drs-section h3              { margin-bottom: 3px; }
-.expert-drs-section .sub-text       { margin: 0px; color: #757575; text-transform: uppercase; }
-.expert-drs-section .desc           { margin-bottom: 18px;}
 
-.diseases-adult-section             { padding: 20px 0px; }
-.diseases-adult-section h1          { margin: 2px 0px; font-weight: 400; color: #17cf93; text-align: center; }
-.diseases-adult-section ion-slide:nth-child(2n) h1 { color: #ffb837; }
-.diseases-adult-section ion-slide:nth-child(3n) h1 { color: #b142ff; }
-.diseases-adult-section             { padding: 20px 15px; }
-.diseases-adult-section {}
+
+
+
