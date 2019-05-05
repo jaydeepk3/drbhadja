@@ -17,7 +17,7 @@ export class Tab1Page {
   diseasesSlideOpts ={
     initialSlide: 0,
     speed: 500,
-    slidesPerView: 3,
+    slidesPerView: 2,
   }
   constructor(private router: Router){
     
