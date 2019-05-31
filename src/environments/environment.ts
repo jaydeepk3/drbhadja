@@ -10,6 +10,7 @@ export const environment = {
 export const apiPath = {
   api_genrate_token : environment.apiUrl + 'api_genrate_token.php',
   api_get_rate_review : environment.apiUrl + 'api_get_rate_review.php',
+  api_add_rate_review : environment.apiUrl + 'api_add_rate_review.php',
   api_appointment : environment.apiUrl + 'api_appointment.php',
   api_subscribe : environment.apiUrl + 'api_subscribe.php',
   api_contact_us : environment.apiUrl + 'api_contact_us.php',

@@ -12,21 +12,21 @@
       </button>
     </div>
     <ul class="review-list">
-      <li>
+      <li *ngFor="let rate of rates">
         <div class="review-title">
-          <h1>Kaushal Joshi</h1>
-          <rating readonly="true" size="default" (rateChange)="onRateChange($event)">
+          <h1>{{rate.name}}</h1>
+          <rating [ngModel]="rate.rating" readonly="true" size="default" >
           </rating>
         </div>
         <div class="review-dsec">
-          <p>
-            Dr. Dharmesh Bhadja has a great knowledge, well versed experience and profound confidence. His diagnosis is
-            absolute and flawless in both acute and chronic disease condition. His understanding of medicine is except..
+          <p [innerHtml]="rate.description ">
+            <!-- Dr. Dharmesh Bhadja has a great knowledge, well versed experience and profound confidence. His diagnosis is
+            absolute and flawless in both acute and chronic disease condition. His understanding of medicine is except.. -->
             <button class="text-btn">Read More</button>
           </p>
         </div>
       </li>
-      <li>
+      <!-- <li>
         <div class="review-title">
           <h1>Dr.Rajendra Patel</h1>
           <rating readonly="true" size="default" (rateChange)="onRateChange($event)">
@@ -53,7 +53,7 @@
             just visit but a journey.
           </p>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
 </ion-content>

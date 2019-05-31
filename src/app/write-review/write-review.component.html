@@ -7,13 +7,13 @@
 <ion-content>
   <ion-item>
     <ion-label floating class="">Name</ion-label>
-    <ion-input  type="text" placeholder="Yasdip Avalani"></ion-input>
+    <ion-input  type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
 </ion-item>
 <ion-item>
   <ion-label floating class="">Message</ion-label>
-  <ion-input  type="textarea" placeholder="My mother was suffering from stomach,gas and other related problems"></ion-input>
+  <ion-input  type="textarea" placeholder="Message" [(ngModel)]="message"></ion-input>
 </ion-item>
-<rating  readonly="false"  size="default" (rateChange)="onRateChange($event)">
+<rating [(ngModel)]="rating" readonly="false"  size="default" (rateChange)="onRateChange($event)">
 </rating>
 <ion-item>
   <button type="submit" (click)="reviewSubmit()">Submit</button>

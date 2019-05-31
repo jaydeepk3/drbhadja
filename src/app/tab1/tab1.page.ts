@@ -28,4 +28,7 @@ export class Tab1Page {
   ratingMore(){
     this.router.navigate(['rate']);
   }
+  clinicDetail(){
+    this.router.navigate(['detail-page','Home'])
+  }
 }
